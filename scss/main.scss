@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -31,11 +32,14 @@ h3 {
     background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
   }
 }
+
+// links
 a {
   color: #fff;
   text-decoration: none;
 }
 
+// header is the menu-btn
 header {
   position: fixed;
   z-index: 5;
@@ -45,10 +49,10 @@ header {
 .text-secondary {
   color: $secondary-color;
 }
-
+// main components
 main {
   padding: 4rem;
-
+  // customize social media icons inside main components
   .icons {
     margin-top: 1rem;
 
